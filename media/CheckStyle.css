@@ -1,0 +1,14 @@
+@media screen and (max-width: 769px) {
+    .checkout-container {
+        margin-top: 100px;
+        padding: 0;
+        flex-direction: column;
+        row-gap: 40px;
+        background: transparent;
+    }
+    .checkout-container > div {
+        background-color: #fff;
+        padding: 40px;
+        border-radius: 6px;
+    }
+}

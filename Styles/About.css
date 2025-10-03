@@ -1,0 +1,55 @@
+.AboutContainer {
+    padding: 8% 6%;
+    padding-top: 12%;
+    flex-direction: column;
+    row-gap: 80px;
+}
+
+.AboutContainer > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.AboutContainer > div:nth-child(2) {flex-direction: row-reverse;}
+
+.AboutContainer > div .image {
+    height: 400px;
+    width: 500px;
+    overflow: hidden;
+    border-radius: 5px;
+    background-color: #f00;
+    flex: 1;
+    cursor: default;
+}
+
+.AboutContainer > div .image:hover img {scale: 1.2;}
+
+.AboutContainer > div .image img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    transition: 0.4s ease-in-out;
+}
+
+.AboutContainer > div .info-data {
+    flex: 2;
+}
+
+.AboutContainer > div h2 {
+    font-size: 36px; 
+    font-weight: 400;
+    color: #222;
+}
+
+.AboutContainer > div h3 {
+    font-size: 24px;
+    color: #444;
+    margin: 5px 0;
+}
+
+.AboutContainer > div p {
+    color: #555;
+    font-size: 16px;
+}

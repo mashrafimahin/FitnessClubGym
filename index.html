@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Club Gym</title>
+    <link rel="stylesheet" href="Styles/Loader.css">
+    <link rel="stylesheet" href="Styles/style.css">
+    <link rel="stylesheet" href="media/Header.css">
+    <link rel="stylesheet" href="media/Footer.css">
+    <link rel="stylesheet" href="media/mediaIndex.css">
+    <link rel="stylesheet" href="Styles/goTop.css">
+    <link rel="stylesheet" href="Styles/Cart.css">
+    <link rel="stylesheet" href="media/CartStyle.css">
+    <link rel="stylesheet" href="Styles/MobileMenu.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!--Loader-->
+    <div class="loading">
+        <span class="loader"></span>
+    </div>
+    <!--main-->
+    <main class="">
+        <!--Header-->
+        <header>
+            <!--Logo-->
+            <div class="logo">
+                <h1>mahin</h1>
+            </div>
+            <!--Navigation-->
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="User/About.html">About</a></li>
+                    <li id="dropdownMenu">
+                        <a>Shop &nbsp<i id="dropIcon" class="fa-solid fa-chevron-down"></i></a>
+                        <div class="dropDown">
+                            <ul>
+                                <li><a href="User/Shopping.html">Weight Training</a></li>
+                                <li><a href="User/Shopping.html">Yoga & Pilates</a></li>
+                                <li><a href="User/Shopping.html">Fitness Accessories</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <!--Action Part-->
+            <div class="action">
+                <ul>
+                    <li>
+                        <a href="User/login.html" target="_blank">
+                            <img src="Icons/account.png" id="account" alt="user_icon">
+                            <p>Login</p>
+                        </a>
+                    </li>
+                    <li class="counting">
+                        <img src="Icons/shopping-bag.png" id="bag" alt="cart_icon">
+                        <p class="counter">0</p>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-bars startMobile"></i>
+                    </li>
+                </ul>
+            </div>
+        </header>
+
+        <!--Mobile_Navigation-->
+        <div class="mobileNavigation">
+            <div class="closeIcons">
+                <i class="fa-solid fa-times closeIcon"></i>
+            </div>
+            <div class="menuList">
+                <ul>
+                    <li><i class="fa-solid fa-chevron-right"></i><a href="#">Home</a></li>
+                    <li><i class="fa-solid fa-chevron-right"></i><a href="User/About.html">About</a></li>
+                    <li><i class="fa-solid fa-chevron-right"></i><a href="User/Shopping.html">Shopping</a></li>
+                    <li><i class="fa-solid fa-chevron-right"></i><a href="User/Contact.html">Contact</a></li>
+                    <li><i class="fa-solid fa-chevron-right"></i><a href="CheckOut/CheckOut.html">Payment</a></li>
+                    <li><i class="fa-solid fa-chevron-right"></i><a href="User/login.html">Login/SignUp</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!--Section-->
+        <!--Home-->
+        <section class="home">
+            <div class="home-info">
+                <h1>Unleash Your Strength with Premium Gym Gear</h1>
+                <p>Transform your workouts with top-quality gym equipment designed for every fitness level. From beginners to pros, we’ve got the tools you need to achieve your goals and build the body you dream of.</p>
+                <a href="User/Shopping.html">Shop Now</a>
+            </div>
+        </section>
+
+        <!--Product Display-->
+        <section class="display">
+            <!--Search Box-->
+            <div class="searchBox">
+                <input type="text" placeholder="Type here to search items." id="searchProduct" >
+                <button type="submit" id="searchBtn"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+            <!--Product Display-->
+            <div class="products">
+                <h1>Up to 20% off Selected Items</h1>
+                <!--arrows-->
+                <div class="arrows">
+                    <i class="fa-solid fa-chevron-left" id="prev"></i>
+                    <!--main slider-->
+                    <div class="slider">
+                        <!--Product-->
+                        <div class="miniBox 1">
+                            <div class="product-image">
+                                <img src="Images/1.webp" loading="lazy" alt="product_image" draggable="false">
+                            </div>
+                            <h1>Product 01</h1>
+                            <p>Price: $20</p>
+                            <div class="product-count">
+                                <button class="decrement">-</button>
+                                <p id="selectedProducts">1</p>
+                                <button class="inrement">+</button>
+                            </div>
+                            <button class="addCart">Add to Cart</button>
+                        </div>
+                        <!--Product-->
+                        <div class="miniBox 2">
+                            <div class="product-image">
+                                <img src="Images/2.webp" loading="lazy" alt="product_image" draggable="false">
+                            </div>
+                            <h1>Product 02</h1>
+                            <p>Price: $20</p>
+                            <div class="product-count">
+                                <button class="decrement">-</button>
+                                <p id="selectedProducts">1</p>
+                                <button class="inrement">+</button>
+                            </div>
+                            <button class="addCart">Add to Cart</button>
+                        </div>
+                        <!--Product-->
+                        <div class="miniBox 3">
+                            <div class="product-image">
+                                <img src="Images/5.webp" loading="lazy" alt="product_image" draggable="false">
+                            </div>
+                            <h1>Product 03</h1>
+                            <p>Price: $20</p>
+                            <div class="product-count">
+                                <button class="decrement">-</button>
+                                <p id="selectedProducts">1</p>
+                                <button class="inrement">+</button>
+                            </div>
+                            <button class="addCart">Add to Cart</button>
+                        </div>
+                        <!--Product-->
+                        <div class="miniBox 4">
+                            <div class="product-image">
+                                <img src="Images/4.webp" loading="lazy" alt="product_image" draggable="false">
+                            </div>
+                            <h1>Product 04</h1>
+                            <p>Price: $20</p>
+                            <div class="product-count">
+                                <button class="decrement">-</button>
+                                <p id="selectedProducts">1</p>
+                                <button class="inrement">+</button>
+                            </div>
+                            <button class="addCart">Add to Cart</button>
+                        </div>
+                        <!--Product-->
+                        <div class="miniBox 5">
+                            <div class="product-image">
+                                <img src="Images/6.webp" loading="lazy" alt="product_image" draggable="false">
+                            </div>
+                            <h1>Product 05</h1>
+                            <p>Price: $20</p>
+                            <div class="product-count">
+                                <button class="decrement">-</button>
+                                <p id="selectedProducts">1</p>
+                                <button class="inrement">+</button>
+                            </div>
+                            <button class="addCart">Add to Cart</button>
+                        </div>
+                    </div>
+                    <!--main slider ends-->
+                    <i class="fa-solid fa-chevron-right" id="next"></i>
+                </div>
+            </div>
+        </section>
+
+        <!--Collection-->
+        <section class="collection">
+            <!--headings-->
+            <div class="info-collection">
+                <h1>Shop by Collection</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti, labore!</p>
+            </div>
+            <!--flexBox-->
+            <div class="box">
+                <div class="flexBox" style="--bg: url(../Images/blog3.webp)">
+                    <div class="info">
+                        <h3>Yoga & <br> Pilates</h3>
+                        <p>Shop Collection</p>
+                    </div>
+                </div>
+                <div class="flexBox" style="--bg: url(../Images/blog2.webp)">
+                    <div class="info">
+                        <h3>Fitness <br> Accessories</h3>
+                        <p>Shop Collection</p>
+                    </div>
+                </div>
+                <div class="flexBox" style="--bg: url(../Images/blog1.jpg)">
+                    <div class="info">
+                        <h3>Weight Training</h3>
+                        <p>Shop Collection</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--link-->
+        <section class="linking">
+            <h1>The Best Equipment for Meeting Your Goals</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+            <a href="User/Shopping.html">Shop Now</a>
+        </section>
+
+        <!--Newsletter-->
+        <section class="newsletter">
+            <div class="part">
+                <h1>Subscribe to Our Newsletter</h1>
+                <form>
+                    <div class="box">
+                        <div class="input-box">
+                            <label for="firstName">First Name <span class="reqired"><sup>*</sup></span></label>
+                            <input type="text" name="firstName" id="firstName" placeholder="John" required>
+                            <p></p>
+                        </div>
+                        <div class="input-box">
+                            <label for="lastName">Last Name <span class="reqired"><sup>*</sup></span></label>
+                            <input type="text" name="lastName" id="lastName" placeholder="Doe" required>
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="input-box">
+                            <label for="eamil">Email <span class="reqired"><sup>*</sup></span></label>
+                            <input type="email" name="email" id="email" placeholder="john.def@mail.com" required>
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="input-box">
+                            <input type="checkbox" name="check" id="check" required>
+                            <label for="check">&nbsp Yes, subscribe me to your network.</label>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <button type="submit" id="submitNewsletter">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <!--footer-->
+        <footer>
+            <div class="content">
+                <div class="footer-links">
+                    <h2>Mahin</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, error?</p>
+                </div>
+                <div class="footer-links">
+                    <h2>Store</h2>
+                    <ul style="margin-left: 0;">
+                        <li style="padding-left: 0;"><a href="#">Shipping & Returns</a></li>
+                        <li style="padding-left: 0;"><a href="#">Store Policy</a></li>
+                        <li style="padding-left: 0;"><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h2>Trending</h2>
+                    <ul>
+                        <li style="--list-bg: url(../Icons/yoga-pose.webp)"><a href="User/Shopping.html">Yoga eqiupments</a></li>
+                        <li style="--list-bg: url(../Icons/soccer-player.webp)"><a href="User/Shopping.html">Sports</a></li>
+                        <li style="--list-bg: url(../Icons/treadmill.webp)"><a href="User/Shopping.html">Tredmil</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h2>Follow Us</h2>
+                    <ul>
+                        <li style="--list-bg: url(../Icons/facebook-logo.webp)"><a href="https://www.facebook.com/mrdodo0" target="_blank">Facebook</a></li>
+                        <li style="--list-bg: url(../Icons/instagram.webp)"><a href="https://www.instagram.com/mashrafi.devs" target="_blank">Instagram</a></li>
+                        <li style="--list-bg: url(../Icons/linkedin.webp)"><a href="https://www.linkedin.com/in/mashrafidevs" target="_blank">LinkedIn</a></li>
+                        <li style="--list-bg: url(../Icons/youtube.webp)"><a href="https://www.youtube.com/@mahin2ix" target="_blank">YouTube</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copy">
+                <p>&copy 2025. All rights reserved.</p>
+            </div>
+        </footer>
+
+        <!--Shopping Cart-->
+        <div class="cart">
+            <!--Headings-->
+            <div class="headings-cart">
+                <h2>Your Cart</h2>
+                <button id="closeCart"><i class="fa-solid fa-times"></i></button>
+            </div>
+            <hr>
+            <!--List-->
+            <div class="list">
+            </div>
+            <hr>
+            <!--Go another page-->
+            <div class="price">
+                <p>Total Price: <span class="totalPrice"></span></p>
+            </div>
+            <div class="newPage">
+                <a href="CheckOut/CheckOut.html">Shop Now</a>
+            </div>
+        </div>
+
+        <!--Filtering List-->
+        <div class="filter-container">
+            <i class="fa-solid fa-times" id="previewClose"></i>
+            <!--Product Content-->
+            <div class="preview-content">
+                <h2>Results found from your search.</h2>
+                <!--box-->
+                <div class="content">
+                </div>
+            </div>
+        </div>
+
+        <!--Extra items-->
+        <div id="goTop">
+            <i class="fa-solid fa-arrow-up"></i>
+        </div>
+    </main>
+
+    <!--JavaScript-->
+    <script src="Scripts/Loader.js"></script>
+    <script type="module" src="Scripts/app.js"></script>
+    <script src="Scripts/DropDown.js"></script>
+    <script src="Scripts/goTop.js"></script>
+    <script src="Scripts/Carousel.js"></script>
+    <script src="Scripts/MobileNav.js"></script>
+    <script src="Scripts/Calculator.js"></script>
+    <script src="Scripts/Cart.js"></script>
+    <script src="Scripts/form.js"></script>
+    <script type="module" src="Scripts/FetchData.js"></script>
+    <script src="Data/productData.js"></script>
+</body>
+</html>

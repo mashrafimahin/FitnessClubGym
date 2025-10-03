@@ -1,0 +1,102 @@
+/* Laptop and smaller (under 1200px) */
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    ::-webkit-scrollbar {width: 4px;}
+
+    header {
+        padding: 3% 4%;
+    }
+
+    header .logo h1 {font-size: 34px;}
+
+    header nav ul {gap: 2px}
+
+    header nav ul li a {font-size: 16px;}
+
+    header .action ul {
+        align-items: center;
+        gap: 6px;
+    }
+
+    header .action ul li:nth-child(2) {
+        margin-top: 4px;
+    }
+
+    .action ul li img {
+        width: 28px;
+        height: 28px;
+    }
+}
+
+/* Tablets (under 768px) */
+@media screen and (min-width: 481px) and (max-width: 767px) {
+    header {
+        background: #fff;
+        padding: 3%;
+    }
+
+    header .logo h1 {
+        font-size: 34px; 
+        color: #222;
+    }
+
+    header nav {
+        display: none;
+    }
+
+    header .action ul {
+        align-items: center;
+        gap: 4px;
+    }
+
+    header .action ul li:nth-child(2) {
+        margin-top: 4px;
+    }
+
+    .action ul li:nth-last-child(1) {display: block;}
+
+    header .action ul li a p {
+        display: none;
+    }
+
+    .action ul li img {
+        width: 24px;
+        height: 24px;
+    }
+}
+
+/* Mobile (under 480px) */
+@media screen and (max-width: 480px) {
+    header {
+        background: #fff;
+        padding: 3%;
+    }
+
+    header .logo h1 {
+        font-size: 30px; 
+        color: #222;
+    }
+
+    header nav {
+        display: none;
+    }
+
+    header .action ul {
+        align-items: center;
+        gap: 4px;
+    }
+
+    header .action ul li:nth-child(2) {
+        margin-top: 4px;
+    }
+
+    .action ul li:nth-last-child(1) {display: block;}
+
+    header .action ul li a p {
+        display: none;
+    }
+
+    .action ul li img {
+        width: 24px;
+        height: 24px;
+    }
+}

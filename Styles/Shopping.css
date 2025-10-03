@@ -1,0 +1,163 @@
+.product-display {
+    width: 100%;
+}
+
+.display-child {
+    margin-top: 120px;
+}
+
+.arrange-product {
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+}
+
+/* Product Items filters */
+.product-filters {
+    background: red;
+    position: fixed;
+    min-height: 60dvh;
+    top: 30%;
+    width: 0;
+    left: 0;
+    border: 2px solid rgb(0,0,0,0.08);
+    border-radius: 0 10px 10px 0;
+    background-color: #fff;
+    box-shadow: 0 10px 10px 0 rgb(0,0,0,0.1);
+    z-index: 99;
+    overflow: hidden;
+    transition: 0.3s ease-in-out;
+}
+
+.product-filters.opened {
+    padding: 20px;
+    width: 20%;
+}
+
+.titles {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#opendd {
+    position: fixed;
+    top: 50%;
+    left: 0;
+    font-size: 22px;
+    color: #444;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+#opendd:hover {
+    transform: translateX(2px);
+    scale: 1.1;
+}
+
+#close {
+    font-size: 22px;
+    color: #444;
+    cursor: pointer;
+}
+
+.titles .name {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #222;
+}
+
+.titles .name h2 {font-size: 20px;}
+.titles .name i {font-size: 20px;}
+
+.product-filters ul {
+    margin-left: 10px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.product-filters ul li {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.product-filters ul li input[type='checkbox'] {
+    accent-color: #06923E;
+    height: 16px;
+    width: 16px;
+    cursor: pointer;
+}
+
+.product-filters ul li label {
+    font-size: 16px;
+}
+
+/* Product Items designs */
+.product-page {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.product-page > div {
+    padding: 20px;
+    border-radius: 4px;
+    background-color: #fff;
+    box-shadow: 0 4px 4px 0 rgb(0,0,0,0.08);
+    transition: 0.3s ease-in-out;
+}
+
+.product-page > div:hover {
+    transform: translateY(4px);
+    box-shadow: 0 0px 4px 0 rgb(0,0,0,0.2);
+}
+
+.product-page > div .image {
+    width: 100%;
+    height: 250px;
+    background-color: darkcyan;
+    overflow: hidden;
+    border-radius: 4px;
+    margin-bottom: 4px;
+    pointer-events: none;
+}
+
+.product-page > div .image img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.product-page > div h2 {
+    font-size: 24px;
+    color: #222;
+}
+
+.product-page > div p {
+    font-size: 18px;
+    color: #444;
+    margin-bottom: 10px;
+}
+
+.product-page > div button {
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    padding: 10px 20px;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 4px;
+    background-color: #06923E;
+    cursor: pointer;
+    transition: 0.1s ease-in-out;
+}
+
+.product-page > div button:active {
+    background-color: #02702e;
+    scale: 0.9;
+}

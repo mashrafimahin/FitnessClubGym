@@ -1,0 +1,210 @@
+.mainContainer {
+    min-height: 100dvh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    background-position-y: -250px;
+}
+
+.container {
+    background-color: #fff;
+    padding: 50px 40px;
+    box-shadow: 0 5px 5px 0 rgb(0,0,0,0.1);
+    border-radius: 5px;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    overflow: hidden;
+}
+
+.login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.login h1,
+.signUp h1 {
+    text-align: center;
+    font-size: 40px;
+    color: #333;
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+    position: relative;
+}
+
+.login h1::after,
+.signUp h1::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 25%;
+    height: 4px;
+    width: 50%;
+    border-radius: 4px;
+    background-color: #57C84D;
+}
+
+.signUp h1::after {
+    width: 25%;
+    right: 35%;
+}
+
+.login .input-box,
+.signUp .input-box {
+    display: flex;
+    align-items: center;
+    border: 1px solid #999;
+    padding: 8px 30px;
+    border-radius: 100px;
+    margin-bottom: 16px;
+}
+
+.login .input-box img,
+.signUp .input-box img {
+    height: 20px;
+    width: 20px;
+    object-fit: cover;
+    max-width: 100%;
+}
+
+.login .input-box input,
+.signUp .input-box input {
+    padding: 10px 20px;
+    outline: none;
+    font-size: 16px;
+    border: 1px solid #888;
+    width: 100%;
+    border: none;
+}
+
+.password {
+    display: flex;
+    align-items: center;
+}
+
+.password button {
+    font-size: 16px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+.password button i {color: #333;}
+
+.login .loginButton,
+.signUp .signButton {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.login .loginButton button,
+.signUp .signButton button {
+    padding: 14px 60px;
+    font-size: 18px;
+    border-radius: 100px;
+    border: none;
+    background: linear-gradient(to left,#57C84D, #83D475);
+    cursor: pointer;
+    transition: 0.1s ease-in-out;
+}
+
+.login .loginButton button:hover,
+.signUp .signButton button:hover {
+    background: linear-gradient(to right,#57C84D, #83D475);
+}
+
+.login .loginButton button:active,
+.signUp .signButton button:active {
+    scale: 0.8;
+}
+
+/* Certains */
+.certains {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 58%;
+    background: linear-gradient(to left, #2EB62C, #83D475);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 18% 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transition: 0.6s ease-in-out;
+}
+
+.certains.active {
+    right: 42%;
+    background: linear-gradient(to left, #83D475, #2EB62C);
+    clip-path: polygon(0 0, 100% 0%, 85% 100%, 0% 100%);
+}
+
+.certains .info {
+    margin-left: 24%;
+    cursor: default;
+    animation: animate 0.6s ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+.certains.active .info {
+    margin-left: 14%;
+}
+
+@keyframes animate {
+    0% { 
+        transform: translateY(20px);
+        filter: blur(30px);
+    }
+    100% {
+        transform: translateY(0);
+        filter: blur(0);
+    }
+}
+
+.certains .info h1 {
+    color: #fff;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.certains .info p {
+    color: #f8f8f8;
+    max-width: 70%;
+    font-size: 16px;
+}
+
+.certains .info p:nth-last-child(1) {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.certains .info p button {
+    padding: 5px 10px;
+    font-weight: 700;
+    border: none;
+    background: transparent;
+    color: #fff;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    transform: translateY(0);
+    transition: 0.1s ease-in-out;
+}
+
+.certains .info p button:hover {
+    transform: translateY(-4px);
+}
+
+.certains .info p button:active {
+    color: #000;
+}
+
+

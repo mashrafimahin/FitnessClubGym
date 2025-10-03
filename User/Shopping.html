@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Shopping</title>
+    <link rel="stylesheet" href="../Styles/Loader.css">
+    <link rel="stylesheet" href="../Styles/style.css">
+    <link rel="stylesheet" href="../media/Header.css">
+    <link rel="stylesheet" href="../media/Footer.css">
+    <link rel="stylesheet" href="../Styles/MobileMenu.css">
+    <link rel="stylesheet" href="../Styles/Shopping.css">
+    <link rel="stylesheet" href="../media/Shop.css">
+    <link rel="stylesheet" href="../Styles/goTop.css">
+    <link rel="stylesheet" href="../Styles/Cart.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .logo {color: #111;}
+        nav ul li a , .action ul li a {color: #222;}
+        section {min-height: 100dvh;}
+    </style>
+</head>
+<body>
+    <!--Loader-->
+    <div class="loading">
+        <span class="loader"></span>
+    </div>
+
+    <!--main-->
+    <main class="">
+        <!--Header-->
+        <header>
+            <!--Logo-->
+            <div class="logo">
+                <h1>mahin</h1>
+            </div>
+            <!--Navigation-->
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a>Shop</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <!--Action Part-->
+            <div class="action">
+                <ul>
+                    <li>
+                        <a href="User/login.html" target="_blank">
+                            <img src="../Icons/account.png" id="account" alt="user_icon">
+                            <p>Login</p>
+                        </a>
+                    </li>
+                    <li class="counting">
+                        <img src="../Icons/shopping-bag.png" id="bag" alt="cart_icon">
+                        <p class="counter">0</p>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-bars startMobile"></i>
+                    </li>
+                </ul>
+            </div>
+        </header>
+
+        <!--Mobile_Navigation-->
+        <div class="mobileNavigation">
+            <div class="closeIcons">
+                <i class="fa-solid fa-times closeIcon"></i>
+            </div>
+            <div class="menuList">
+                <ul>
+                    <li><i class="fa-solid fa-chevron-right"></i><a href="../index.html">Home</a></li>
+                    <li><i class="fa-solid fa-chevron-right"></i><a href="./Shopping.html">About</a></li>
+                    <li><i class="fa-solid fa-chevron-right"></i><a href="#">Shopping</a></li>
+                    <li><i class="fa-solid fa-chevron-right"></i><a href="./Contact.html">Contact</a></li>
+                    <li><i class="fa-solid fa-chevron-right"></i><a href="../CheckOut/CheckOut.html">Payment</a></li>
+                    <li><i class="fa-solid fa-chevron-right"></i><a href="./login.html">Login/SignUp</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!--Section-->
+        <section style="padding: 10px;">
+            <!--main container-->
+            <div class="product-display">
+                <!--Child Component-->
+                <div class="display-child">
+                    <!--Another Child to arrange-->
+                    <div class="arrange-product">
+                        <!--Filters-->
+                        <div class="product-filters">
+                            <div class="titles">
+                                <div class="name">
+                                    <i class="fa-solid fa-sliders"></i>
+                                    <h2>Filters</h2>
+                                </div>
+                                <i class="fa-solid fa-square-caret-left" id="close"></i>
+                            </div>
+                            <ul>
+                                <li>
+                                    <input type="checkbox" value="dumbbell" id="weight">
+                                    <label for="weight">Weight</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" value="yoga" id="yoga">
+                                    <label for="yoga">Yoga</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" value="bike" id="bike">
+                                    <label for="bike">Bike</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" value="treadmill" id="tradmill">
+                                    <label for="tradmill">Treadmill</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" value="bench" id="sports">
+                                    <label for="sports">Sports</label>
+                                </li>
+                            </ul>
+                        </div>
+                        <i class="fa-solid fa-square-caret-right" id="opendd"></i>
+                        <!--Product Preview-->
+                        <div class="product-page"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--footer-->
+        <footer>
+            <div class="content">
+                <div class="footer-links">
+                    <h2>Mahin</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, error?</p>
+                </div>
+                <div class="footer-links">
+                    <h2>Store</h2>
+                    <ul style="margin-left: 0;">
+                        <li style="padding-left: 0;"><a href="#">Shipping & Returns</a></li>
+                        <li style="padding-left: 0;"><a href="#">Store Policy</a></li>
+                        <li style="padding-left: 0;"><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h2>Trending</h2>
+                    <ul>
+                        <li style="--list-bg: url(../Icons/yoga-pose.webp)"><a href="#">Yoga eqiupments</a></li>
+                        <li style="--list-bg: url(../Icons/soccer-player.webp)"><a href="#">Sports</a></li>
+                        <li style="--list-bg: url(../Icons/treadmill.webp)"><a href="#">Tredmil</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h2>Follow Us</h2>
+                    <ul>
+                        <li style="--list-bg: url(../Icons/facebook-logo.webp)"><a href="https://www.facebook.com/mrdodo0" target="_blank">Facebook</a></li>
+                        <li style="--list-bg: url(../Icons/instagram.webp)"><a href="https://www.instagram.com/mashrafi.devs" target="_blank">Instagram</a></li>
+                        <li style="--list-bg: url(../Icons/linkedin.webp)"><a href="https://www.linkedin.com/in/mashrafidevs" target="_blank">LinkedIn</a></li>
+                        <li style="--list-bg: url(../Icons/youtube.webp)"><a href="https://www.youtube.com/@mahin2ix" target="_blank">YouTube</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copy">
+                <p>&copy 2025. All rights reserved.</p>
+            </div>
+        </footer>
+
+        <!--Shopping Cart-->
+        <div class="cart">
+            <!--Headings-->
+            <div class="headings-cart">
+                <h2>Your Cart</h2>
+                <button id="closeCart"><i class="fa-solid fa-times"></i></button>
+            </div>
+            <hr>
+            <!--List-->
+            <div class="list">
+            </div>
+            <hr>
+            <!--Go another page-->
+            <div class="price">
+                <p>Total Price: <span class="totalPrice"></span></p>
+            </div>
+            <div class="newPage">
+                <a href="../CheckOut/CheckOut.html">Shop Now</a>
+            </div>
+        </div>
+
+        <!--Extra items-->
+        <div id="goTop">
+            <i class="fa-solid fa-arrow-up"></i>
+        </div>
+    </main>
+
+    <!--JavaScript-->
+    <script src="../Scripts/Loader.js"></script>
+    <script src="../Scripts/MobileNav.js"></script>
+    <script src="../Scripts/goTop.js"></script>
+    <script src="../Scripts/Cart.js"></script>
+    <script type="module" src="../Scripts/FetchData.js"></script>
+    <script src="../Scripts/Filters.js"></script>
+    <script>
+        // sticky nav bar 
+        const header = document.querySelector('header');
+        window.addEventListener('scroll' , () => {
+            header.classList.toggle('headerActive' , window.scrollY > header.clientHeight)
+        })
+
+        // cart menu activate 
+        const cart = document.querySelector('.cart');
+        const openCart = document.querySelector('.counting');
+            
+        // open shopping cart by clicking btn
+        openCart.addEventListener('click' , () => {
+            cart.classList.add('cartActive');
+        })
+    </script>
+</body>
+</html>

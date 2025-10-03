@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Checkpoint | Fitness Club Gym</title>
+    <link rel="stylesheet" href="../Styles/Loader.css">
+    <link rel="stylesheet" href="../Styles/style.css">
+    <link rel="stylesheet" href="../media/Header.css">
+    <link rel="stylesheet" href="../media/Footer.css">
+    <link rel="stylesheet" href="../Styles/MobileMenu.css">
+    <link rel="stylesheet" href="../Styles/CheckOut.css">
+    <link rel="stylesheet" href="../media/CheckStyle.css">
+    <link rel="stylesheet" href="../Styles/goTop.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .logo {color: #111;}
+        nav ul li a , .action ul li a {color: #222;}
+        section {min-height: 100dvh;}
+    </style>
+</head>
+<body>
+    <!--Loader-->
+    <div class="loading">
+        <span class="loader"></span>
+    </div>
+    <!--main-->
+    <main class="">
+        <!--Header-->
+        <header>
+            <!--Logo-->
+            <div class="logo">
+                <h1>mahin</h1>
+            </div>
+            <!--Navigation-->
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../User/About.html">About</a></li>
+                    <li id="dropdownMenu">
+                        <a>Shop &nbsp<i id="dropIcon" class="fa-solid fa-chevron-down"></i></a>
+                        <div class="dropDown">
+                            <ul>
+                                <li><a href="../User/Shopping.html">Weight Training</a></li>
+                                <li><a href="../User/Shopping.html">Yoga & Pilates</a></li>
+                                <li><a href="../User/Shopping.html">Fitness Accessories</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="../User/Contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <!--Action Part-->
+            <div class="action">
+                <ul>
+                    <li>
+                        <a href="User/login.html" target="_blank">
+                            <img src="../Icons/account.png" id="account" alt="user_icon">
+                            <p>Login</p>
+                        </a>
+                    </li>
+                    <li class="counting">
+                        <img src="../Icons/shopping-bag.png" id="bag" alt="cart_icon">
+                        <p class="counter">0</p>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-bars startMobile"></i>
+                    </li>
+                </ul>
+            </div>
+        </header>
+
+        <!--Mobile_Navigation-->
+        <div class="mobileNavigation">
+            <div class="closeIcons">
+                <i class="fa-solid fa-times closeIcon"></i>
+            </div>
+            <div class="menuList">
+                <ul>
+                    <li><i class="fa-solid fa-chevron-right"></i><a href="../index.html">Home</a></li>
+                    <li><i class="fa-solid fa-chevron-right"></i><a href="../User/About.html">About</a></li>
+                    <li><i class="fa-solid fa-chevron-right"></i><a href="../User/Shopping.html">Shopping</a></li>
+                    <li><i class="fa-solid fa-chevron-right"></i><a href="../User/Contact.html">Contact</a></li>
+                    <li><i class="fa-solid fa-chevron-right"></i><a href="#">Payment</a></li>
+                    <li><i class="fa-solid fa-chevron-right"></i><a href="../User/login.html">Login/SignUp</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <section>
+            <div class="checkout-container">
+                <!-- Checkout Form -->
+                <div class="checkout-form">
+                    <h2>Checkout Information</h2>
+                    <form>
+                        <div class="InItems">
+                            <label for="name">Full Name</label>
+                            <input type="text" class="name-input" id="name" placeholder="Enter your name" required>
+                        </div>
+            
+                        <div class="InItems">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" placeholder="Enter your email" required>
+                        </div>
+            
+                        <div class="InItems">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" placeholder="Enter your phone number" required>
+                        </div>
+
+                        <div class="InItems">
+                            <label for="address">Address</label>
+                            <textarea placeholder="Type your address ..." required></textarea>
+                        </div>
+
+                        <hr />
+            
+                        <h3>Payment Method</h3>
+                        <div class="payment-method">
+                            <label><input type="radio" name="payment"> Credit Card</label>
+                            <label><input type="radio" name="payment"> PayPal</label>
+                            <label><input type="radio" name="payment"> Cash on Delivery</label>
+                        </div>
+
+                        <hr />
+
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="agree">
+                            <label for="agree">I agree to the terms & conditions</label>
+                        </div>
+                        <button class="submit-btn Place-Order">Place Order</button>
+                    </form>
+                </div>
+            
+                <!-- Checkout Summary -->
+                <div class="checkout-summary">
+                    <h2>Your Order</h2>
+                    <ul class="product-list product-list-checkOut"></ul>
+                    <hr />
+                    <div class="total-amount">
+                        <h3>Total: $<span id="totalAmount">0.00</span></h3>
+                    </div>
+                </div>
+            
+            </div>
+        </section>
+
+        <!--footer-->
+        <footer>
+            <div class="content">
+                <div class="footer-links">
+                    <h2>Mahin</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, error?</p>
+                </div>
+                <div class="footer-links">
+                    <h2>Store</h2>
+                    <ul style="margin-left: 0;">
+                        <li style="padding-left: 0;"><a href="#">Shipping & Returns</a></li>
+                        <li style="padding-left: 0;"><a href="#">Store Policy</a></li>
+                        <li style="padding-left: 0;"><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h2>Trending</h2>
+                    <ul>
+                        <li style="--list-bg: url(../Icons/yoga-pose.webp)"><a href="../User/Shopping.html">Yoga eqiupments</a></li>
+                        <li style="--list-bg: url(../Icons/soccer-player.webp)"><a href="../User/Shopping.html">Sports</a></li>
+                        <li style="--list-bg: url(../Icons/treadmill.webp)"><a href="../User/Shopping.html">Tredmil</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h2>Follow Us</h2>
+                    <ul>
+                        <li style="--list-bg: url(../Icons/facebook-logo.webp)"><a href="https://www.facebook.com/mrdodo0" target="_blank">Facebook</a></li>
+                        <li style="--list-bg: url(../Icons/instagram.webp)"><a href="https://www.instagram.com/mashrafi.devs" target="_blank">Instagram</a></li>
+                        <li style="--list-bg: url(../Icons/linkedin.webp)"><a href="https://www.linkedin.com/in/mashrafidevs" target="_blank">LinkedIn</a></li>
+                        <li style="--list-bg: url(../Icons/youtube.webp)"><a href="https://www.youtube.com/@mahin2ix" target="_blank">YouTube</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copy">
+                <p>&copy 2025. All rights reserved.</p>
+            </div>
+        </footer>
+
+        <!--Extra items-->
+        <div id="goTop">
+            <i class="fa-solid fa-arrow-up"></i>
+        </div>
+    </main>
+
+    <!--JavaScript-->
+    <script src="../Scripts/Loader.js"></script>
+    <script src="../Scripts/MobileNav.js"></script>
+    <script type="module" src="../Scripts/app.js"></script>
+    <script src="../Scripts/DropDown.js"></script>
+    <script src="../Scripts/goTop.js"></script>
+    <script src="../Scripts/CheckOut.js"></script>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join Now!</title>
+    <link rel="stylesheet" href="../Styles/Loader.css">
+    <link rel="stylesheet" href="../Styles/style.css">
+    <link rel="stylesheet" href="../Styles/form.css">
+    <link rel="stylesheet" href="../media/LoginDes.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!--Loader-->
+    <div class="loading">
+        <span class="loader"></span>
+    </div>
+
+    <!--main content-->
+    <div class="mainContainer">
+        <div class="container">
+            <!--Login-->
+            <div class="login">
+                <h1>Login</h1>
+                <!--login form-->
+                <form action="#">
+                    <div class="input-box">
+                        <img src="../Icons/user.png" alt="user_icon" draggable="false">
+                        <input type="text" id="user" placeholder="Enter your email">
+                    </div>
+                    <div class="input-box">
+                        <img src="../Icons/unlock.png" alt="user_icon" draggable="false">
+                        <div class="password">
+                            <input type="password" id="passcode" placeholder="Enter your password">
+                            <button id="changeType"><i class="fa-solid fa-eye"></i></button>
+                        </div>
+                    </div>
+                    <div class="loginButton">
+                        <button type="submit" id="loginBtn">Login</button>
+                    </div>
+                </form>
+            </div>
+            <!--SignUp-->
+            <div class="signUp">
+                <h1>Sign Up</h1>
+                <!--signUp form-->
+                <form action="#">
+                    <div class="input-box">
+                        <img src="../Icons/user.png" alt="user_icon" draggable="false">
+                        <input type="text" id="userName" placeholder="Enter your name">
+                    </div>
+                    <div class="input-box">
+                        <img src="../Icons/envelope.png" alt="user_icon" draggable="false">
+                        <input type="text" id="userMail" placeholder="Enter your email">
+                    </div>
+                    <div class="input-box">
+                        <img src="../Icons/unlock.png" alt="user_icon" draggable="false">
+                        <div class="password">
+                            <input type="password" id="passCode" placeholder="Enter your password">
+                            <button id="changeTypeSignUp"><i class="fa-solid fa-eye"></i></button>
+                        </div>
+                    </div>
+                    <div class="signButton">
+                        <button type="submit" id="signBtn">Sign Up</button>
+                    </div>
+                </form>
+            </div>
+            <!--Certain-->
+            <div class="certains">
+            </div>
+        </div>
+    </div>
+
+    <!--JavaScript-->
+    <script src="../Scripts/Loader.js"></script>
+    <script src="../Scripts/form.js"></script>
+</body>
+</html>

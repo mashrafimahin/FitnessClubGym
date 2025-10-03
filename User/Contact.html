@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Form | Fitness Shopping</title>
+  <link rel="stylesheet" href="../Styles/Contact.css">
+</head>
+<body>
+  <section class="contact-section">
+    <div class="contact-box">
+      <h2>Contact Us</h2>
+      <form>
+        <!-- Name Row -->
+        <div class="row">
+          <div class="input-group">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" placeholder="Enter first name" required>
+          </div>
+          <div class="input-group">
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" placeholder="Enter last name" required>
+          </div>
+        </div>
+
+        <!-- Email -->
+        <div class="input-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="Enter your email" required>
+        </div>
+
+        <!-- Phone -->
+        <div class="input-group">
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" placeholder="Enter your phone number">
+        </div>
+
+        <!-- Checkboxes -->
+        <div class="input-group checkbox-group">
+          <label>Topics of Interest</label>
+          <div class="checkboxes">
+            <label><input type="checkbox"> Web Development</label>
+            <label><input type="checkbox"> Design</label>
+            <label><input type="checkbox"> Fitness</label>
+          </div>
+        </div>
+
+        <!-- Bio -->
+        <div class="input-group">
+          <label for="bio">Your Bio</label>
+          <textarea id="bio" placeholder="Write a short bio..."></textarea>
+        </div>
+
+        <!-- Accept Terms -->
+        <div class="input-group terms">
+          <label>
+            <input type="checkbox" required> I accept the Terms & Conditions
+          </label>
+        </div>
+
+        <!-- Button -->
+        <button type="submit" class="submit-btn">Send Message</button>
+      </form>
+    </div>
+  </section>
+</body>
+</html>

@@ -1,0 +1,61 @@
+/* Tablet & Mobile view */
+@media screen and (max-width: 1024px) {
+    .signUp,
+    .certains {
+        display: none;
+    }
+    .container {
+        width: 100%;
+        max-width: 420px;
+        padding: 40px 25px;
+        box-shadow: 0 5px 12px rgba(0,0,0,0.1);
+        border-radius: 10px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .login {
+        width: 100%;
+    }
+
+    .login h1 {
+        font-size: 28px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .login .input-box {
+        width: 100%;
+        padding: 10px 20px;
+        border-radius: 50px;
+        margin-bottom: 15px;
+    }
+
+    .login .input-box input {
+        font-size: 15px;
+    }
+
+    .login .loginButton button {
+        width: 100%;
+        padding: 14px;
+        font-size: 16px;
+    }
+}
+
+/* Mobile optimization */
+@media screen and (max-width: 480px) {
+
+    .login h1 {
+        font-size: 24px;
+    }
+
+    .login .input-box {
+        padding: 8px 15px;
+    }
+
+    .login .loginButton button {
+        font-size: 15px;
+        padding: 12px;
+    }
+}

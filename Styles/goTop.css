@@ -1,0 +1,24 @@
+#goTop {
+    position: fixed;
+    bottom: 5%;
+    right: 4%;
+    padding: 12px 14px;
+    border-radius: 100px;
+    background-color: #fff;
+    box-shadow: 0 5px 8px 0 rgb(0,0,0,0.2);
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(50px);
+    transition: 0.2s ease-in-out;
+}
+
+#goTop:active {
+    scale: 0.8;
+}
+
+#goTop.goTopActive {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}

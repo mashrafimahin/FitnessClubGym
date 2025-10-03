@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #0a0a0a;
+  color: #e0e0e0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.contact-section {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.contact-box {
+  max-width: 600px;
+  width: 100%;
+  background: #111;
+  border: 2px solid #00ffe0;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 0 20px rgba(0, 255, 224, 0.3);
+}
+
+.contact-box h2 {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #00ffe0;
+  letter-spacing: 2px;
+}
+
+/* Input Groups */
+.input-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.input-group label {
+  margin-bottom: 6px;
+  font-size: 0.9rem;
+  color: #aaa;
+}
+
+.input-group input,
+.input-group textarea {
+  background: #0f0f0f;
+  border: 2px solid #222;
+  border-radius: 8px;
+  padding: 12px;
+  color: #fff;
+  font-size: 1rem;
+  outline: none;
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+.input-group input:focus,
+.input-group textarea:focus {
+  border: 2px solid #00ffe0;
+  box-shadow: 0 0 10px rgba(0, 255, 224, 0.5);
+}
+
+textarea {
+  resize: none;
+  min-height: 100px;
+}
+
+/* Name Row */
+.row {
+  display: flex;
+  gap: 15px;
+}
+.row .input-group {
+  flex: 1;
+}
+
+/* Checkbox Group */
+.checkbox-group .checkboxes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 8px;
+}
+
+.checkbox-group label {
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.checkbox-group input {
+  margin-right: 6px;
+}
+
+/* Terms */
+.terms label {
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Button */
+.submit-btn {
+  width: 100%;
+  padding: 12px;
+  background: #00ffe0;
+  color: #111;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.submit-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 12px rgba(0, 255, 224, 0.7);
+}
+
+
+@media screen and (max-width: 600px) {
+  .row {
+    flex-direction: column;
+  }
+}
